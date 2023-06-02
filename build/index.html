@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in design</title>
+    <link rel="stylesheet" href="/build/style.css">
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" id="login-btn">Log In</button>
+                    <button type="button" class="toggle-btn" id="register-btn">Register</button>
+                </div>
+                <div class="social-icons">
+                    <img src="./images/fb.png" alt="">
+                    <img src="./images/tw.png" alt="">
+                    <img src="./images/gp.png" alt="">
+                </div>
+                <form action="/" method="get" id="logging" class="input-group">
+                    <input type="text" name="userid" id="userid" class="input-field" placeholder="User ID" autocomplete="off">
+                    <img class="unRight icons" id="unRight" src="./images/Eo_circle_green_white_checkmark.svg.png" alt="">
+                    <img class="unWrong icons" id="unWrong" src="./images/64px-Cross_red_circle.svg.png" alt="">
+                    <small class="small" id="loginUN"></small>
+                    <input type="password" name="password" id="password" class="input-field" placeholder="Password">
+                    <img class="unRight1 icons" id="unRight1" src="./images/Eo_circle_green_white_checkmark.svg.png" alt="">
+                    <img class="unWrong1 icons" id="unWrong1" src="./images/64px-Cross_red_circle.svg.png" alt="">
+                    <small class="small" id="loginPW"></small>
+                    <input type="checkbox" name="checkbox" id="checkbox" class="checkbox"><span>Remeber Password</span>
+                    <button type="submit" id="log-submit-btn" class="submit-btn">Log In</button>
+                </form>
+                <form action="/" method="get" id="register" class="input-group">
+                    <input type="text" name="userid1" id="userid1" class="input-field" placeholder="User ID" required>
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Email ID" required>
+                    <input type="password" name="password1" id="password1" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" name="checkbox1" id="checkbox1" class="checkbox"><span>I agree to the terms & conditions</span>
+                    <button type="submit" class="submit-btn" id="reg-submit-btn">Register</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
